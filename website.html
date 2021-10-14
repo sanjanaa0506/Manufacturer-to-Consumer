@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>STS</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+
+.topnav 
+{
+  overflow: hidden;
+  background-color: black;
+  padding: 7px 50px;
+  border-radius: 10px;
+}
+
+
+
+.topnav a 
+{
+  float: left;
+  font-size: 20px;
+  color: gold;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.topnav a:hover 
+{
+  background-color: white;
+  color: black;
+
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color:  #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 150px;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+  z-index: 3;
+
+  
+}
+.dropdown-menu
+{
+   font-size: 10px;
+}
+
+.dropdown-content a {
+  font-size: 10px;
+  float: left;
+  color: gold;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover 
+{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+
+
+.body 
+{
+  margin: 1px 1px;
+  font-family: Times New Roman Georgia;
+  padding: 10px;
+  background-color: black;
+}
+
+.header 
+{
+  border: 13px outset black;
+  margin: #dba36b gold;
+  font-size: 70px;
+  font-style:Times New Roman Georgia;
+  background-color:#efbcf7;
+  color: #1c0808;
+  /*text-align: center;*/
+  padding:0px;
+  padding-bottom: 0px;
+}
+.container 
+{
+  position: relative;
+  text-align: center;
+  color: black;
+  padding: 0;
+ 
+}
+
+.centered 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-400%);
+  color: black;
+  background-color:#f57b42;
+
+
+}
+
+
+img 
+{
+  border: 3px solid gold;
+  border-radius: 15px;
+  padding: 0;
+  width: 100%;
+  opacity: 0.7;
+  height:100%;
+}
+
+img:hover 
+{
+  box-shadow: 2 2 2px 2px rgba(0, 0, 0, 0);
+}
+
+.flex-container 
+{
+  display: flex;
+  background-color:white;
+  border-radius: 10px;
+  text-decoration-color:#f0890c;
+}
+
+.flex-container > div 
+{
+  background-color: white;
+  margin: 8px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 30px;
+  word-spacing: 6px;
+}
+
+
+.neonText 
+{
+  animation: flicker 2.0s infinite alternate;
+  color: solid rgba(0, 0, 0, 1.0);
+   font-size: 90%;
+}
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 10%, 20%, 25%, 33%, 57%, 100% {
+
+      text-shadow:
+      0 0 40px black,
+      0 0 11px black,
+      0 0 19px black,
+      0 0 40px orangered,
+      0 0 80px black,
+      0 0 90px black,
+      0 0 100px black,
+      0 0 150px black;
+  
+  }
+  
+  0%, 50%, 0% {        
+      text-shadow: none;
+  }    
+}
+
+
+/* Additional styling */
+
+
+
+.h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.
+/* Footer */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 1px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) 
+{
+  .topnav a {
+    float: right;
+    width: 100%;
+  }
+}
+
+.footer
+ {
+  background-color:black;
+  color: yellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.button 
+{
+  font-size: 4.2rem;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+figcaption
+{
+    caption-side: bottom;
+    font-size: 10px;
+    font-style:Times New Roman Georgia;
+
+}
+</style>
+
+<center>
+<div class="flex-container">
+  <div style="background-color:coral;"><b>What's New??</b></a></div>
+  <div style="background-color:lightblue;"><b>Find Your Perfect!!</b></div>
+  <div style="background-color:khaki;"><b>Earn Upto 2000/-</b></div>
+  <div style="background-color:gold;"><b>Get Upto 50% Discount</b></div>  
+  <div style="background-color:peru;"><b>100% Customer Satisfaction</b></div> 
+</div>
+</center>
+
+
+<div class="topnav">
+  <a href="home.html"><b><kbd>Home</b></a>
+  <a href="AoutUs.html"><b><kbd>About the SST</b></a>
+  <a href="CotctUs.html"><b><kbd>Query</b></a>
+  <a href="#"><b><kbd>Earning Opportunities</b></a>
+
+  <div class="dropdown" style="float:right;">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Profile
+       <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="C:\Users\Administrator\Desktop\5-CT-B-122AWT\transparent login form\index.html">Log in</a></li>
+          <li><a href="C:\Users\Administrator\Desktop\5-CT-B-122AWT\transparent login form\index.html">Log out</a></li>
+          <li><a href="C:/Users/Administrator/Desktop/5-CT-B-122AWT/signup.html">Sign in</a></li>
+        </ul>
+        </div>
+      </div> 
+    </div>
+</div>
+
+
+
+<main>
+    <div class="header-img"></div>
+</main>
+<div class="header">
+  <div class="container">
+  <img src="C:\Users\Administrator\Desktop\petbasket.jpeg">
+  <div class="container">
+    <div class="centered">
+      <div class="neonText">
+      <h1>Welcome to SST Shopping Store</h1>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="footer">
+<p style="font-size:15px">We are also discoverable here!</p> 
+
+<div class="controll">
+<center>
+<figure>
+
+<figcaption>
+<img src="C:\Users\Administrator\Desktop\5-CT-B-122AWT\imgs\b.png"  style="width:4.5%" alt="Blogspot" onclick="window.open('https://sanjana0506.blogspot.com','_blank');"width="5%" height="9%">
+<img src="C:\Users\Administrator\Desktop\5-CT-B-122AWT\imgs\g.png"  style="width:5%" alt="Github" onclick="window.open('https://github.com/sanjanaa0506','_blank');" width="5%" height="9%">
+<img src="C:\Users\Administrator\Desktop\5-CT-B-122AWT\imgs\t.jpg"  style="width:4.5%" alt="Twitter" onclick="window.open('https:///twitter.com/MigiSanjune','_blank');"width="5%" height="9%">
+<img src="C:\Users\Administrator\Desktop\5-CT-B-122AWT\imgs\in.jpg"  style="width:4% " alt="Twitter" onclick="window.open('https://www.linkedin.com/in/sanjana-g-12a676198/','_blank');"width="1%" height="0.7%">
+</figcaption>
+
+<br><br>
+<span><kbd><kbd>Created By Sanjana Gore.</span> | | <span class="far fa-copyright"> <kbd>2021 All rights reserved.</span>
+</center>
+</figure>
+</div>
+</div>
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Meow & Woof Store">
+  <meta name="keywords" content="Every Item for yourself">
+  <meta name="author" content="Sanjana Gore">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+
+body
+{
+  font-family: montserrat;
+  background:linear-gradient(160deg,#2980b9,#8e44ad);
+
+}
+
+input[type=text]
+{
+  border: 4px solid wheat;
+  width: 25%;
+  padding: 2px 5px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+textarea 
+{
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 4px solid wheat;
+  border-radius: 6px;
+  background-color: yellowgreen;
+  resize: none;
+}
+select 
+{
+  width: 50%;
+  padding: 16px 18px;
+  border: 6px;
+  border-radius: 6px;
+  background-color:floralwhite;
+}
+
+input[type=button], input[type=submit], input[type=reset] 
+{
+  display: block;
+  transition-duration: 0.4s;
+  box-shadow: 0 7px 168x 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.18);
+  background-color: #4CAF50;
+  border: 2px solid blue;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<form name='sregistration' action="file:///C:/Users/Administrator/Desktop/5-CT-B-122AWT/signupcomplete.html" onsubmit ='return formValidation()' method='post'>
+
+<h1>Please fill following details to Sign up at SST.</h1>
+
+<b>First Name:</b><input type="text" placeholder="Sanjanaa" name="sanjana" required><br><br><br>
+<b>Middle Name:</b><input type="text" placeholder="Ambadas" name="Ambadas"><br><br><br>
+<b>Last Name:</b></b><input type="text" placeholder="Gore" name="Gore" required><br><br><br>
+<b>Your Email: </b><input type="text" placeholder="saja@gmail.com" name="mazamail"><br><br><br>
+<b>Product Name:</b><input type="text" placeholder="Collars..etc" name="mask"><br><br><br>
+<b>Shipping Address:</b><input type="text" value=" " id="" name="ngp"><br><br><br>
+<b>Another Address:</b><input type="text" value=" " name="ngpp"><br><br><br>
+
+<label for="Country"><b>Select your country::</b></label><br>
+<select name="Country" id="Country">
+   <option selected hidden values=" ">My Country</option>
+   <optgroup label="India">India</optgroup>
+   <option value="Africa">Africa</option>
+  <option value="Russia">Russia</option>
+  <option value="Australia">Australia</option>
+  <option value="Rome">Rome</option>
+</select>
+<br><br><br><br>
+<label for="Feedback">
+<b>Feedback:: </b></label><br>
+<textarea id="Comment:" name="Comment:" rows="5" cols="20" placeholder="I want to...."></textarea><br><br><br><br>
+
+
+
+<input type="submit" value="Submit" name="submit" >
+<script type="text/javascript" href="signup.js"></script>
+</center>
+</form>
+</body>
+</html>
